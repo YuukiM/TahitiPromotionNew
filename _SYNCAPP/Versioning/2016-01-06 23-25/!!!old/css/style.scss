@@ -1,0 +1,435 @@
+@charset "UTF-8";
+
+@import "bootstrap", "fonts", "slick", "slick-theme";
+
+/* Base
+   ========================================================================== */
+html{
+  overflow-x: hidden;
+  font-size: 85%;
+}
+body{
+
+}
+
+.baseLink {
+  &:link, &:visited {
+    color: $baseLink;
+    text-decoration: underline;
+  }
+  &:hover, &:active {
+    color: $baseHover;
+    text-decoration: none;
+  }
+}
+.colouredBackLink {
+  &:link, &:visited {
+    color: $colouredBackLink;
+    text-decoration: underline;
+  }
+  &:hover, &:active {
+    color: $colouredBackHover;
+    text-decoration: none;
+  }
+
+}
+/* Header Area
+   ========================================================================== */
+
+#headerWrap{
+  background: url("../img/bg-tiki.png"), linear-gradient($accentBackGround2,$accentBackGround2 - 50);
+  background-position: center;
+}
+
+.header {
+  background-color: transparent;
+  position: relative;
+  padding: 7px 0;
+  z-index: 50;
+  .container {
+    position: relative;
+    min-height:5rem;
+  }
+  .logo {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    img {
+      width: 100%;
+    }
+  }
+  .tel {
+    color: $colouredBackColour;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Martel Sans', sans-serif;
+    line-height: 1;
+    right: 15px;
+    position: absolute;
+    top: 0;
+    span{
+      font-size: 70%;
+    }
+    a {
+      @extend .baseLink;
+      text-decoration: underline;
+    }
+  }
+  .contact-link {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    li {
+      float: left;
+      line-height: 1;
+      list-style: none;
+      &:not(:last-child){
+        margin: 0 1rem 0 0;
+      }
+      span{
+        font-size:70%;
+        vertical-align: 20%;
+      }
+      a{
+        @extend .colouredBackLink;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.navbar{
+  border: none;
+  z-index: 10;
+  .navbar-header{
+    position: relative;
+  }
+  .socials {
+    z-index: 15;
+    overflow: hidden;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 22px;
+    a {
+      display: block;
+      @extend .colouredBackLink;
+      text-decoration: none !important;
+      &:not(:last-child){
+        margin-right: 15px;
+      }
+    }
+  }
+}
+#visual-info{
+  position: relative;
+  z-index: 0;
+}
+.visual{
+  img{
+    transition: all 1s linear;
+    width: 100%;
+  }
+  margin-bottom: 0;
+  .slide{
+    position: relative;
+  }
+  .slick-next, .slick-prev{
+    display: none !important;
+  }
+  .text-container{
+    background-color: $transparentBG2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    .text{
+      position: absolute;
+      z-index: 10;
+      bottom: 10%;
+      width: 100%;
+      padding: 0 5%;
+      text-align: center;
+      p{
+        color: $colouredBackColour;
+      }
+    }
+  }
+}
+.info{
+  background: url("../img/bg-tiki.png"), linear-gradient($accentBackGround2,$accentBackGround2 - 50);
+  background-position: center;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid $baseBackGround;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  color: $colouredBackColour;
+  width: 100%;
+  h2{
+    font-family: 'Martel Sans', sans-serif;
+  }
+  .info-text{
+    dd{
+      margin-bottom: 1.5rem;
+      a{
+        @extend .colouredBackLink;
+      }
+    }
+  }
+}
+#main{
+  background: url("../img/bg-white.jpg");
+  padding-top: 1.5rem;
+}
+.cat{
+  .image {
+    margin-bottom: 1rem;
+    img{
+      width: 100%;
+    }
+  }
+}
+.banner{
+  img{
+    width: 100%;
+  }
+}
+h2{
+  font-family: 'Martel Sans', sans-serif;
+}
+
+/* page */
+.dancer{
+  margin-bottom: 1rem;
+  img{
+    width: 100%;
+  }
+}
+
+
+#footer{
+  background-color: $accentBackGround2;
+  background: url("../img/bg-tiki.png"), linear-gradient($accentBackGround2,$accentBackGround2 - 50);
+  background-position: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.56) inset;
+  color: $colouredBackColour;
+  padding: 15px 0;
+  a{
+    @extend .colouredBackLink;
+  }
+  .logo{
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px dotted #666;
+    img{
+      width: 100%;
+    }
+  }
+  .footer-contact{
+    margin: 0;
+    overflow: hidden;
+    dt{
+      float: left;
+      margin-right: 1%;
+      width: 32%;
+    }
+    dd{
+      float: left;
+      margin: 0;
+      width: 67%;
+    }
+  }
+}
+#footer-bottom{
+  background-color: $accentBackGround1;
+  border-top: 1px solid $accentBackGround1 + 20;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+  color: $colouredBackColour;
+  padding: 1.5rem 0;
+  a{
+    @extend .colouredBackLink;
+    &:hover, &active{
+      color: $colouredBackLink;
+    }
+  }
+}
+
+/* media queries */
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .navbar{
+    .container{
+      padding: 0;
+    }
+  }
+  .visual{
+    &.container{
+      padding: 0;
+    }
+  }
+}
+@media screen and (min-width: 480px){
+  .visual {
+    .text-container {
+      .text {
+        top: 30%;
+      }
+    }
+  }
+  .info{
+    .info-text{
+      overflow: hidden;
+      dt{
+        float: left;
+        width: 12%;
+        margin-right: 2%;
+      }
+      dd{
+        float:left;
+        width: 83%;
+        margin-bottom: 0;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    .logo {
+      margin: 1rem 0;
+      img {
+        width: auto;
+      }
+    }
+    .socials {
+      font-size: 1rem;
+      top: 0;
+      right: 15px;
+      position: absolute;
+      bottom: 0;
+      a {
+        display: block;
+
+        &:link, &:visited {
+          color: $headIconColour;
+        }
+        &:hover, &:active {
+          color: $colouredBackHover;
+          text-decoration: none;
+        }
+      }
+      :not(:last-child){
+        margin-right: 1rem;
+      }
+    }
+    .contact-link{
+      position: absolute;
+      top: 0;
+      right: 15%;
+      line-height: 1;
+    }
+    .tel{
+      font-size: 1.6rem;
+      position: absolute;
+      right: 1rem;
+      top: auto;
+      bottom: 25%;
+    }
+  }
+  .navbar{
+    a{
+      //color: $colouredBackLink !important;
+      transition: all 300ms;
+    }
+    .socials{
+      display: none;
+    }
+  }
+  .info{
+    position: absolute;
+    bottom: 0;
+    .info-text{
+      dt{
+        width: 9%;
+      }
+    }
+  }
+  .visual{
+    .slick-next, .slick-prev{
+      display: inline-block !important;
+    }
+    .text-container{
+      transition: all 1s linear;
+      background: $transparentBG2;
+      width: 50%;
+      height: auto;
+      top: 17%;
+      right: 5%;
+      opacity: 0;
+      .text{
+        text-align: left;
+        position: static;
+        padding: 2rem;
+        overflow: hidden;
+        p{
+          color: $colouredBackColour;
+        }
+        button{
+          float: right;
+        }
+      }
+    }
+    .slick-current{
+      .text-container {
+        transition: all 1s linear;
+        opacity: 1;
+      }
+    }
+  }
+  #footer{
+    .logo{
+      padding: 0;
+      margin-top: 0;
+      border-top: none;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  #footer-bottom{
+    .copy{
+      float: left;
+    }
+    .extra-contents{
+      float: right
+    }
+  }
+}
+@media screen and (min-width: 992px){
+  html{
+    font-size: 100%;
+  }
+  #headerWrap{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+  }
+  .navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+    li a:hover{
+      color: $colouredBackLink !important;
+    }
+  }
+  .visual{
+    .text-container{
+        width: 35%;
+        top: 25%;
+    }
+    .slick-list{
+      overflow: visible;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body.mceContentBody {
+  font-size: 16px;
+  font-family: "Montserrat", "Hiragino Kaku Gothic Pro", "Yu Gothic", Meiryo, sans-serif;
+}
+.mceContentBody h1{
+  color: #104F87;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.mceContentBody h2{
+  border-bottom: 2px solid #AAA;
+  color: #104F87;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 0px;
+  padding: 0.5rem 0px;
+  position: relative;
+}
+.mceContentBody h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 23%;
+  background-color: #1B86E4;
+  height: 2px;
+  bottom: -2px;
+}

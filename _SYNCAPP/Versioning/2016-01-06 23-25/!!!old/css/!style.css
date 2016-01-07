@@ -1,0 +1,49 @@
+/* colours */
+/* Font sizes */
+/* head h1 */
+/* main h1, h2 */
+/* h3 */
+/* h4,h5,h6,p */
+/* exception */
+/* Base
+   ========================================================================== */
+* {
+  /*color: $baseColour;*/ }
+
+html {
+  font-size: 87.5%;
+  line-height: 1.5;
+  color: #333333; }
+
+a {
+  text-decoration: none; }
+  a:link, a:visited {
+    color: #b2407f; }
+  a:hover, a:active {
+    color: #ff75c2; }
+
+body {
+  background-color: #eeeeee;
+  margin: 0 auto;
+  width: 100%; }
+
+#container {
+  margin: 0 auto; }
+
+p {
+  margin: 0 0 1.5rem 0; }
+
+ul, ol {
+  margin: 0 0 1.5rem 0; }
+
+img {
+  height: auto; }
+
+/* Header Area
+   ========================================================================== */
+#head {
+  background-color: #44b3f0;
+  background-size: 10px 10px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  margin: 0 0 1.5rem 0; }
