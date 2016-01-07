@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: dancer
+    Template Name: page
 */
 ?>
 
