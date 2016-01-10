@@ -46,7 +46,7 @@
                             'posts_per_page' => '999'
                         );
                         $eventItem = new WP_Query($args);
-                        echo "<div class=\"eventItem\">";
+
                         echo the_content();
 
                         if ($eventItem->have_posts()) {
@@ -64,7 +64,7 @@
                                 }
 
                                 echo "<div class=\"row\">";
-                                    echo "<div class='col-xs-12'>";
+                                    echo "<div class='col-xs-12 event-item'>";
                                         echo "<h2>" . get_the_title($eventItemID) . "</h2>";
                                         echo "<div class=\"row\">";
                                             if($eventItemImage) {
@@ -82,7 +82,6 @@
                                 echo "</div>";
                             }
                         }
-                        echo "</div>";
                     }
                     wp_reset_postdata();
                     ?>

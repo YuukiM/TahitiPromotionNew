@@ -6347,6 +6347,8 @@ button {
     margin-bottom: 0; }
 #page .freepaper-thumbnail {
   margin-top: 2rem; }
+#page .event-item {
+  margin-bottom: 2rem; }
 
 #footer {
   background: url("../img/flower-bg.svg") center #060f18;
