@@ -54,13 +54,7 @@
 
                                 $eventItemID = $eventItem->ID;
                                 $eventItemImage = get_field("thumbnail", $eventItemID);
-                                if (get_field("url", $eventItemID)) {
-                                    $eventItemLinkURL = get_field("url", $eventItemID);
-                                } elseif (get_field("link", $eventItemID)) {
-                                    $eventItemLinkURL = get_field("link", $eventItemID);
-                                } else {
-                                    $eventItemLinkURL = "";
-                                }
+
 
                                 echo "<div class=\"row\">";
                                     echo "<div class='col-xs-12 event-item'>";
@@ -68,7 +62,7 @@
                                         echo "<div class=\"row\">";
                                             if($eventItemImage) {
                                                 echo "<div class='col-xs-12 col-sm-4 col-md-5 col-lg-4'>";
-                                                echo "<a href=\"" . $eventItemLinkURL . "\"><img src=\"" . $eventItemImage . "\" /></a>";
+                                                echo "<a href=\"" . $eventItemImage . "\"><img src=\"" . $eventItemImage . "\" /></a>";
                                                 echo "</div>";
                                                 echo "<div class='col-xs-12 col-sm-8 col-md-7 col-lg-8'>";
                                             }else {
