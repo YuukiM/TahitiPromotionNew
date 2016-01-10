@@ -7,7 +7,17 @@
 <?php get_header(); ?>
     <div id="main">
         <div class="container">
-            <div class="lead-text"><h1><?php the_title(); ?></h1></div>
+            <div class="lead-text">
+                <?php
+                    $leadText = get_field("leadText", $id);
+                    if ($leadText) {
+                        echo "<h1>" . $leadText . "</h1>";
+                    }
+                    else{
+                        echo "<h1>" . get_the_title() . "</h1>";
+                    }
+                ?>
+            </div>
             <section class="main-content row">
                 <div class="col-md-9" id="left">
                     <?php
@@ -57,10 +67,14 @@
                                     echo "<div class='col-xs-12'>";
                                         echo "<h2>" . get_the_title($eventItemID) . "</h2>";
                                         echo "<div class=\"row\">";
-                                            echo "<div class='col-xs-12 col-sm-4 col-md-2 col-lg-4'>";
+                                            if($eventItemImage) {
+                                                echo "<div class='col-xs-12 col-sm-4 col-md-5 col-lg-4'>";
                                                 echo "<a href=\"" . $eventItemLinkURL . "\"><img src=\"" . $eventItemImage . "\" /></a>";
-                                            echo "</div>";
-                                            echo "<div class='col-xs-12 col-sm-8 col-md-10 col-lg-8'>";
+                                                echo "</div>";
+                                                echo "<div class='col-xs-12 col-sm-8 col-md-7 col-lg-8'>";
+                                            }else {
+                                                echo "<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>";
+                                            }
                                                     the_content();
                                             echo "</div>";
                                         echo "</div>";
