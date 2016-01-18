@@ -69,7 +69,7 @@
 </div>
 <div id="footer-bottom" class="small">
     <div class="container">
-        <div class="extra-contents"><a href="site-map">サイトマップ</a> | <a href="../about-us/privacy-policy">個人情報保護方針</a></div>
+        <div class="extra-contents"><a href="<?php bloginfo("url");?>/site-map">サイトマップ</a> | <a href="<?php bloginfo("url");?>/about-us/privacy-policy">個人情報保護方針</a></div>
         <div class="copy">&copy;Copyright <?php echo date("Y"); ?> Tahiti Promotion all rights reserved.</div>
     </div>
 </div>
