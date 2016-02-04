@@ -14,18 +14,20 @@
                         'post_type' => 'goods',
                         'posts_per_page' => 2,
                         'orderby' => 'date',
+                        'goods-cat' => 'ピックアップ',
                         'order' => 'DESC'
                     );
                     $item = new WP_Query($Args);
                     if ($item->have_posts()) :
                         echo "<div class=\"col-xs-12 col-md-10\" id=\"left\">";
+                        if ($leadText) {
+                            echo "<div class=\"lead-text\"><h1>" . $leadText . "</h1></div>";
+                        }
+                        else{
+                            echo "<div class=\"lead-text\"><h1>" . get_the_title() . "</h1></div>";
+                        }
                         while ($item->have_posts()) {
-                            if ($leadText) {
-                                echo "<div class=\"lead-text\"><h1>" . $leadText . "</h1></div>";
-                            }
-                            else{
-                                echo "<div class=\"lead-text\"><h1>" . get_the_title() . "</h1></div>";
-                            }
+
                             $item->the_post();
                             $thumbnailL = get_field("thumbnailL", $item->ID);
                             $pdf = get_field("pdf", $item->ID);
@@ -56,6 +58,28 @@
                         }
                         ?>
                         <div class="row">
+                            <?php
+
+
+
+
+
+
+
+
+
+
+                            ?>
+
+
+
+
+
+
+
+
+
+
                             <div class="lead-text col-xs-12"><h1>その他の商品カテゴリー</h1></div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="thumbnail">
