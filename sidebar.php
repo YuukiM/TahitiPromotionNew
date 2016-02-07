@@ -36,7 +36,7 @@
                     echo "<div class='col-xs-12'><h2>バックナンバー</h2></div>";
                 }
                 if (is_page(36)) {
-                    $items = get_posts("post_type=goods");
+                    $items = get_posts("post_type=goods&goods-cat=ピックアップ");
                 }
                 foreach($items as $item){
                     $freePaperPDF = get_field("pdf", $item->ID);
