@@ -20,7 +20,7 @@
                     $item = new WP_Query($Args);
                     if ($item->have_posts()) :
 
-                        echo get_the_terms($post->ID, 'goods-cat');;
+                        echo get_the_terms($post->ID, 'goods-cat');
 
                             echo "<div class=\"col-xs-12 col-md-10\" id=\"left\">";
                             if ($leadText) {
@@ -68,9 +68,10 @@
                 $Args = array(
                     'post_type' => 'goods',
                     'posts_per_page' => 0,
-                    'orderby' => 'date',
                     'goods-cat' => 'その他のカテゴリー',
-                    'order' => 'ASC'
+                    'meta_key' => 'order',
+                    'orderby' => 'meta_value_num',
+                    'order' => 'ASC',
                 );
                 $item = new WP_Query($Args);
                 if ($item->have_posts()) :
