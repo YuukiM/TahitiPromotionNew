@@ -40,7 +40,7 @@
                                 echo "<div class=\"row\">";
                                 echo "<div class=\"col-xs-12 col-sm-3 col-md-4\">";
                                 if ($thumbnailL) {
-                                    echo "<div class='free-paper'><a href=\"" . $linkURL . "\"><img src=\"" . $thumbnailL . "\"/></a></div>";
+                                    echo "<div class='free-paper'><a href=\"" . $linkURL . "\"><img src=\"" . $thumbnailL . "\" alt=\"". get_the_title() . "\"/></a></div>";
                                 } else {
                                     echo "No image.";
                                 }
@@ -87,7 +87,7 @@
                         echo "<div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\">";
                             echo "<div class=\"thumbnail\">";
                                 echo "<a href=\"".$linkURL."\" title=\"".get_the_title()."\" target=\"_blank\">";
-                                    echo "<img src=\"".$thumbnailL."\" />";
+                                    echo "<img src=\"".$thumbnailL."\" alt=\"". get_the_title() ."\" />";
                                     echo "<div class=\"caption\">";
                                     echo get_the_title();
                                     echo "</div>";
