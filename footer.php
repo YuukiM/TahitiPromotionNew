@@ -100,12 +100,14 @@
 <?php endif; ?>
 
 <?php if(is_page("artist")): ?>
-    <script>
-        $("#dancerJP > div").heightLine();
-        $("#dancerTA > div").heightLine();
-        $("#group > div").heightLine();
-        $("#musician > div").heightLine();
-        $("#mc > div").heightLine();
+    <script type="text/javascript">
+        $(window).on("load",function() {
+            $("#dancerJP > div").heightLine();
+            $("#dancerTA > div").heightLine();
+            $("#group > div").heightLine();
+            $("#musician > div").heightLine();
+            $("#mc > div").heightLine();
+        });
     </script>
 
 <?php endif; ?>
