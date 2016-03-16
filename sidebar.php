@@ -10,7 +10,8 @@
                     }else{
                         echo "<a class='list-group-item' href='" . get_permalink($info->ID) . "'>";
                     }
-                    echo get_the_date("n/j", $info->ID).get_the_title($info->ID);
+                    echo get_the_title($info->ID);
+                    //echo get_the_date("n/j", $info->ID).get_the_title($info->ID);
                     echo "</a>";
                 }
                 echo"</div>";

@@ -59,10 +59,14 @@
                             echo "<div class=\"info-inner\"><div class=\"image\"><div class=\"bg\" style=\"background: url(".first_image().") center center no-repeat;\"></div></div>";
 
                         }
-                        echo "<p class=\"date\">".get_the_date("n/j")."</p>";
+                        if(get_field("date")) {
+                            echo "<p class=\"date\">" . get_field("date") . "</p>";
+                        }
+                        //echo "<p class=\"date\">".get_the_date("n/j")."</p>";
                         //echo "<div class=\"caption\">";
                         echo "<h2>" . get_the_title() . "</h2>";
-                        echo "<p class=\"excerpt\">" . get_the_excerpt() . " 詳しくはこちら<span class='glyphicon glyphicon-menu-right'></span></p>";
+                        echo "<p class=\"excerpt\">" . get_the_excerpt() . "</p>";
+                        echo "<p class=\"update\">" . get_the_date("Y年n月j日") . "</p>";
                         //echo "</div>";
                         echo "</div></a>";
                         echo "</div>";

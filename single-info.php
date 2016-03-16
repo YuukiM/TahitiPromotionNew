@@ -13,6 +13,9 @@
                     </div>
                     <div class="col-sm-9" id="left">
                         <section class="main-content">
+                            <p class="infoUpdate">
+                                <?php echo get_the_date("Y年n月j日"); ?>
+                            </p>
                             <article>
                                 <?php the_content(); ?>
                             </article>
