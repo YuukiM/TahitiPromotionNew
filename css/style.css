@@ -6257,12 +6257,12 @@ button {
   .thumbnail a:hover, .thumbnail a:active, .thumbnail a:focus {
     text-decoration: none; }
   .thumbnail h2 {
+    font-family: "Montserrat", "Hiragino Kaku Gothic Pro", "Yu Gothic", Meiryo, sans-serif;
     margin-top: 0;
     position: relative;
     color: #1b86e4; }
   .thumbnail .caption {
-    background: transparent url("../img/bg-flower.png") repeat scroll right 55%/118%;
-    font-family: "Montserrat", "Hiragino Kaku Gothic Pro", "Yu Gothic", Meiryo, sans-serif; }
+    background: transparent url("../img/bg-flower.png") repeat scroll right 55%/118%; }
     .thumbnail .caption p {
       margin: 0; }
 
