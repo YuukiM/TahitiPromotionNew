@@ -60,7 +60,7 @@
 
                         }
                         if(get_field("date")) {
-                            echo "<p class=\"date\">" . get_field("date") . "</p>";
+                            echo "<div class=\"date\"><p>" . get_field("date") . "</p></div>";
                         }
                         //echo "<p class=\"date\">".get_the_date("n/j")."</p>";
                         //echo "<div class=\"caption\">";

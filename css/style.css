@@ -6066,13 +6066,17 @@ button.close {
     background-color: #1b86e4;
     border-radius: 45px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
     height: 5rem;
+    justify-content: center;
     width: 5rem;
-    line-height: 5rem;
     text-align: center;
     position: absolute;
     top: 0;
     left: 0; }
+    .infoBlockSettings .date p, #info .info-block .date p, #page .info-block .date p {
+      margin: 0; }
   .infoBlockSettings .update, #info .info-block .update, #page .info-block .update {
     text-align: right;
     color: #999999; }
