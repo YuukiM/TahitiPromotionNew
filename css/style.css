@@ -6008,7 +6008,8 @@ button.close {
       cursor: pointer; }
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none;
-        background-color: transparent; }
+        background-color: transparent !important;
+        border: none !important; }
         .slick-dots li button:hover:before, .slick-dots li button:focus:before {
           opacity: 1; }
       .slick-dots li button:before {
