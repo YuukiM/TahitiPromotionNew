@@ -330,6 +330,7 @@ button {
   }
   .caption {
     background: transparent url("../img/bg-flower.png") repeat scroll right 55% / 118%;
+    font-family: "Montserrat", "Hiragino Kaku Gothic Pro", "Yu Gothic", Meiryo, sans-serif;
     p {
       margin: 0;
     }
@@ -356,6 +357,7 @@ button {
 /* home */
 #home{
   h1{
+    font-family: "Montserrat", "Hiragino Kaku Gothic Pro", "Yu Gothic", Meiryo, sans-serif;
     font-size: $font-size-h2;
     text-align: center;
     margin: 0 0 2rem 0;
