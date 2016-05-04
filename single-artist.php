@@ -52,6 +52,14 @@
                        </div>
                    <?php endif; ?>
                 </div>
+                <?php if (get_field('movie')): ?>
+                    <h2>動画</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <?php the_field('movie'); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
                 <?php if (get_field('media')): ?>
                     <h2>出演情報</h2>
                     <div class="row">
