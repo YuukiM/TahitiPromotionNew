@@ -6040,9 +6040,9 @@ button.close {
   color: #e41b75;
   text-decoration: none; }
 
-.colouredBackLink:link, .infoBlockSettings a:link, #info .info-block a:link, #page .info-block a:link, #footer a:link, #footer-bottom a:link, .colouredBackLink:visited, .infoBlockSettings a:visited, #info .info-block a:visited, #page .info-block a:visited, #footer a:visited, #footer-bottom a:visited {
+.colouredBackLink:link, .infoBlockSettings a:link, #info .info-block a:link, #page .info-block a:link, #backToTop:link, #footer a:link, #footer-bottom a:link, .colouredBackLink:visited, .infoBlockSettings a:visited, #info .info-block a:visited, #page .info-block a:visited, #backToTop:visited, #footer a:visited, #footer-bottom a:visited {
   color: #ffffff; }
-.colouredBackLink:hover, .infoBlockSettings a:hover, #info .info-block a:hover, #page .info-block a:hover, #footer a:hover, #footer-bottom a:hover, .colouredBackLink:active, .infoBlockSettings a:active, #info .info-block a:active, #page .info-block a:active, #footer a:active, #footer-bottom a:active {
+.colouredBackLink:hover, .infoBlockSettings a:hover, #info .info-block a:hover, #page .info-block a:hover, #backToTop:hover, #footer a:hover, #footer-bottom a:hover, .colouredBackLink:active, .infoBlockSettings a:active, #info .info-block a:active, #page .info-block a:active, #backToTop:active, #footer a:active, #footer-bottom a:active {
   color: #ffffff;
   text-decoration: none; }
 
@@ -6362,6 +6362,12 @@ button {
   margin-top: 2rem; }
 #page .event-item {
   margin-bottom: 2rem; }
+
+#backToTop {
+  background-color: #060f18;
+  display: inline-block;
+  float: right;
+  padding: 0.3rem 0.5rem; }
 
 #footer {
   background: url("../img/flower-bg.svg") center #060f18;

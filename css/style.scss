@@ -489,6 +489,13 @@ button {
 
 }
 
+#backToTop{
+  @extend .colouredBackLink;
+  background-color: $baseBackGround2;
+  display: inline-block;
+  float: right;
+  padding: 0.3rem 0.5rem;
+}
 
 #footer {
   background: url("../img/flower-bg.svg") center $baseBackGround2;
