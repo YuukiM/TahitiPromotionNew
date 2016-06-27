@@ -7,10 +7,10 @@
     <meta name="msvalidate.01" content="B98429B99C37B3D3F4C97397601F73F1" />
     <?php if(is_home()): ?>
         <title><?php bloginfo("name")?> - <?php bloginfo("description"); ?></title>
+        <meta name="description" content="タヒチプロモーションでは本場のタヒチにこだわり、迫力あるショーやバラエティー出演にいたるまで、枠にとらわれることなく、素晴らしいタヒチアンダンスを披露するダンサーを揃えています。" />
     <?php else: ?>
         <title><?php  echo get_the_title(); ?></title>
     <?php endif; ?>
-    <meta name="description" content="タヒチプロモーションでは本場のタヒチにこだわり、迫力あるショーやバラエティー出演にいたるまで、枠にとらわれることなく、素晴らしいタヒチアンダンスを披露するダンサーを揃えています。" />
     <meta name="keywords" content="tahiti promotion、タヒチプロモーション,タヒチ,タヒチアンダンス,テ ラ キョウコ,TAHITI,TAHITIAN,TAHITIAN DANCE,タウルミ,taurumi,tahaki,タハキ,タヒチ プロモーション,DANCE" />
     <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo("template_url"); ?>/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo("template_url"); ?>/favicons/apple-touch-icon-60x60.png">
