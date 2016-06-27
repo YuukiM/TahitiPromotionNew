@@ -86,6 +86,18 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
+<script type="text/javascript">
+    $(function() {
+        var topBtn = $('#backToTop');
+        topBtn.click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    });
+</script>
+
 <?php if(is_home()): ?>
     <script type="text/javascript">
         $(window).load(function(){
