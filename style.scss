@@ -454,10 +454,22 @@ button {
   }
   .artist {
     &.cat-title {
-      color: $colouredBackColour;
+
+
       .thumbnail{
         background: url("img/flower01.svg") left top no-repeat $accent1;
-        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+          color: $colouredBackColour;
+          border: none;
+          margin: 0;
+          padding: 0;
+          &:after{
+            content: unset;
+          }
+        }
       }
     }
     .thumbnail {
@@ -489,6 +501,11 @@ button {
   }
   .event-item{
     margin-bottom: 2rem;
+  }
+
+  .artist-block{
+    display: flex;
+    flex-wrap: wrap;
   }
 
 }

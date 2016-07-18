@@ -9,7 +9,7 @@
         <div class="container">
             <div class="lead-text"><h1>アーティスト一覧</h1></div>
             <section class="main-content row">
-                <div class="col-md-9" id="left">
+                <div class="col-md-9 artist-container" id="left">
                     <?php
                         $dancerArgs = array(
                             'post_type'   => 'artist',
@@ -65,10 +65,10 @@
                             'orderby' => 'meta_value_num',
                             'order' => 'ASC',
                             'meta_query' => array(
-                               array(
-                                  'key' => 'category',
-                                  'value' => 'musician'
-                               ),
+                                array(
+                                    'key' => 'category',
+                                    'value' => 'musician'
+                                ),
                             ),
                         );
                         $musician = new WP_Query( $musicianArgs );
@@ -90,10 +90,10 @@
                             'orderby' => 'meta_value_num',
                             'order' => 'ASC',
                             'meta_query' => array(
-                               array(
-                                  'key' => 'category',
-                                  'value' => 'group'
-                               ),
+                                array(
+                                    'key' => 'category',
+                                    'value' => 'group'
+                                ),
                             ),
                         );
                         $team = new WP_Query( $teamArgs );
@@ -115,10 +115,10 @@
                             'orderby' => 'meta_value_num',
                             'order' => 'ASC',
                             'meta_query' => array(
-                               array(
-                                  'key' => 'category',
-                                  'value' => 'mc'
-                               ),
+                                array(
+                                    'key' => 'category',
+                                    'value' => 'mc'
+                                ),
                             ),
                         );
                         $team = new WP_Query( $teamArgs );

@@ -114,19 +114,6 @@
     </script>
 <?php endif; ?>
 
-<?php if(is_page("artist")): ?>
-    <script type="text/javascript">
-        $(window).on("load",function() {
-            $("#dancerJP > div").heightLine();
-            $("#dancerTA > div").heightLine();
-            $("#group > div").heightLine();
-            $("#musician > div").heightLine();
-            $("#mc > div").heightLine();
-        });
-    </script>
-
-<?php endif; ?>
-
 <?php if(is_singular("artist")): ?>
     <script type="text/javascript">
         $(window).load(function(){
