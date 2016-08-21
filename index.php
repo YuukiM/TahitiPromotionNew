@@ -37,7 +37,7 @@
     <section id="info" class="block info">
         <div class="container">
             <h1 class="text-uppercase">Information<br /><small>最新情報</small></h1>
-            <div class="row">
+            <div class="row info-group">
                 <?php
                 $infoArgs = array(
                     'post_type' => 'info',
@@ -47,7 +47,7 @@
                 );
                 $info = new WP_Query($infoArgs);
                 if ($info->have_posts()) {
-                    $i = 0;
+                    //$i = 0;
                     while ($info->have_posts()) {
                         $info->the_post();
                         echo "<div class=\"info-block col-xs-12 col-md-4\">";
@@ -70,10 +70,10 @@
                         //echo "</div>";
                         echo "</div></a>";
                         echo "</div>";
-                        $i++;
+                        /*$i++;
                         if (($i % 3) == 0) {
                             echo "<div class='clearfix visible-md-block visible-lg-block'></div>";
-                        }
+                        }*/
                     }
                 } else {
                     echo "<div class=\"info-text\">";

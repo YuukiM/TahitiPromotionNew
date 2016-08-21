@@ -304,6 +304,10 @@ button {
   color: $colouredBackColour;
   padding: 2rem 0;
   width: 100%;
+  .info-group{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .info-block{
     @extend .infoBlockSettings;
     margin-bottom: 2rem;
