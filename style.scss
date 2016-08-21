@@ -442,8 +442,19 @@ button {
       text-align: center;
     }
   }
+  .info-group{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .info-block {
     @extend .infoBlockSettings;
+    margin-bottom: 15px;
+    h2{
+      border: none;
+      &:after{
+        content: unset;
+      }
+    }
   }
   .artist, .free-paper {
     margin-bottom: 30px;

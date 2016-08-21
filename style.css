@@ -6340,6 +6340,15 @@ button {
     margin-left: 30px; }
   #page .main-content .aligncenter {
     text-align: center; }
+#page .info-group {
+  display: flex;
+  flex-wrap: wrap; }
+#page .info-block {
+  margin-bottom: 15px; }
+  #page .info-block h2 {
+    border: none; }
+    #page .info-block h2:after {
+      content: unset; }
 #page .artist, #page .free-paper {
   margin-bottom: 30px; }
 #page .artist-photos-nav button {

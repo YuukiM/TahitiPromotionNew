@@ -7,6 +7,7 @@
 <?php get_header(); ?>
     <div id="main">
         <div class="container">
+            <?php echo "<div class=\"lead-text\"><h1>" . get_the_title() . "</h1></div>"; ?>
             <section class="main-content row">
                 <div class="col-lg-12" id="left">
                     <?php
@@ -18,8 +19,7 @@
                     );
                     $info = new WP_Query($infoArgs);
                     if ($info->have_posts()) {
-                        echo "<div class=\"row\">";
-                        $i = 0;
+                        echo "<div class=\"row info-group\">";
                         while ($info->have_posts()) {
                             $info->the_post();
                             echo "<div class=\"info-block col-lg-4\">";
@@ -43,11 +43,6 @@
                             echo "</div>";
                             echo "</div></a>";
                             echo "</div>";
-                            $i ++;
-                            if(($i % 3) == 0){
-                                echo "<div class='clearfix'></div>\n";
-                            }
-
                         }
                         echo "</div>";
                     } else {
