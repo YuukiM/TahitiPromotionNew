@@ -10,8 +10,11 @@
                         $mainVisualImage = get_field("image", $ID);
                         $mainVisualExtURL = get_field("url", $ID);
                         $mainVisualLink = get_field("link", $ID);
+                        $blurSVG1Path = get_bloginfo(template_url)."/img/blur1.svg";
+                        $blurSVG2Path = get_bloginfo(template_url)."/img/blur2.svg#blur";
                         echo "<div class='slide' style='background-image: url($mainVisualImage);'>\n";
                         echo "<div class='text-container'>\n";
+                        echo "<span style=\"background-image: url('$blurSVG1Path'), url($mainVisualImage); filter: url('$blurSVG2Path')\"></span>";
                         echo "<div class='text'>\n";
                         echo $mainVisualText . "\n";
                         if($mainVisualExtURL) {
