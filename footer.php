@@ -103,7 +103,7 @@
         $(window).load(function(){
             $('.slide').css('visibility' , 'visible');
             $('.visual-inner').slick({
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 5000,
                 cssEase: 'ease',
                 dots: true,

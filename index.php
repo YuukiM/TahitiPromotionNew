@@ -10,7 +10,7 @@
                         $mainVisualImage = get_field("image", $ID);
                         $mainVisualExtURL = get_field("url", $ID);
                         $mainVisualLink = get_field("link", $ID);
-                        echo "<div class='slide'>\n";
+                        echo "<div class='slide' style='background-image: url($mainVisualImage);'>\n";
                         echo "<div class='text-container'>\n";
                         echo "<div class='text'>\n";
                         echo $mainVisualText . "\n";
@@ -27,7 +27,7 @@
                         echo "</a>\n";
                         echo "</div>\n";
                         echo "</div>\n";
-                        echo "<img src='" . $mainVisualImage . "' />\n";
+                        //echo "<img src='" . $mainVisualImage . "' />\n";
                         echo "</div>\n";
                     }
                 }

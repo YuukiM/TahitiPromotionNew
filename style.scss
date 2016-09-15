@@ -275,6 +275,10 @@ button {
   .slide {
     position: relative;
     visibility: hidden;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
   }
   .slick-next, .slick-prev {
     display: none !important;
@@ -617,6 +621,9 @@ button {
   }
   #visual {
     max-height: 350px;
+    .slick{
+      height: 350px;
+    }
     .text-container {
       .text {
         top: 30%;
@@ -668,6 +675,9 @@ button {
   }
   #visual {
     max-height: 370px;
+    .slick{
+      height: 370px;
+    }
     .slick-next, .slick-prev {
       display: inline-block !important;
     }
@@ -768,6 +778,9 @@ button {
   }
   #visual {
     max-height: 630px;
+    .slide{
+      height: 630px;
+    }
     .text-container {
       width: 35%;
       /*top: 25%;*/
