@@ -8,10 +8,10 @@
     <div id="main">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12" id="left">
-                    お探しのコンテンツは見つかりません。別なURLをお試しください。<br>
-                    <a href="<?php bloginfo("url"); ?>" title="タヒチプロモーション">タヒチプロモーション　ホームはこちら</a>
-                    <br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-xs-12 text-center" id="left">
+                    <br><br>
+                    お探しのコンテンツは見つかりません。別なURLをお試しください。<br><br>
+                    <a class="btn btn-default" href="<?php bloginfo("url"); ?>" title="タヒチプロモーション">タヒチプロモーション　ホームへ</a>
                 </div>
                 <?php get_sidebar(); ?>
             </div>

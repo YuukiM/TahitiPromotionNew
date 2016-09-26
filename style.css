@@ -6389,6 +6389,15 @@ button {
   display: flex;
   flex-wrap: wrap; }
 
+/* /page */
+/* not found */
+#not-found {
+  background: url("img/404.jpg") center center no-repeat;
+  background-size: cover;
+  height: auto;
+  color: #ffffff; }
+
+/* /not found */
 #backToTop {
   background-color: #060f18;
   display: inline-block;
@@ -6454,7 +6463,11 @@ button {
       top: 30%; }
 
   #info .info-block {
-    overflow: hidden; } }
+    overflow: hidden; }
+
+  #not-found {
+    height: 1080px;
+    color: #ffffff; } }
 @media screen and (min-width: 768px) {
   .header .logo {
     margin: 1rem 0;

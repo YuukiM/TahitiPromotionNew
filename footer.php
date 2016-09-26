@@ -1,7 +1,9 @@
 </div>
+<?php if(!is_404()): ?>
 <div class="container">
     <a href="#" id="backToTop" title="ページトップへ戻る"><small><span class="glyphicon glyphicon-chevron-up"></span> ページトップへ戻る</small></a>
 </div>
+<?php endif; ?>
 <div id="footer">
     <div class="container">
         <div class="row">

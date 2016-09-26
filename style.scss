@@ -524,6 +524,18 @@ button {
   }
 
 }
+/* /page */
+
+/* not found */
+
+#not-found{
+  background: url("img/404.jpg") center center no-repeat;
+  background-size: cover;
+  height: auto;
+  color: $colouredBackColour;
+}
+/* /not found */
+
 
 #backToTop{
   @extend .colouredBackLink;
@@ -628,6 +640,11 @@ button {
       overflow: hidden;
     }
   }
+  #not-found{
+    height: 1080px;
+    color: $colouredBackColour;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -705,6 +722,7 @@ button {
       }
     }
   }
+
 
   #footer {
     .logo {

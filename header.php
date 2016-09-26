@@ -95,11 +95,16 @@
         </div><!--/.nav-collapse -->
     </nav>
 </div>
-<?php if(is_home()): ?>
-    <div id="home">
-<?php else: ?>
-    <div id="page">
-<?php endif; ?>
+
+<?php
+    if(is_home()) {
+        echo "<div id=\"home\">";
+    }elseif(is_404()) {
+        echo "<div id=\"not-found\">";
+    }else{
+        echo "<div id=\"page\" >";
+}
+?>
 
 <?php //title
 if(!is_home()) {
@@ -147,10 +152,12 @@ if(!is_home()) {
     echo "</section>";
 }
 ?>
-<section id="breadcrumb" class="container">
-    <?php
-        if (function_exists( 'bread_crumb' ) ) {
-            bread_crumb("elm_class=breadcrumb");
-        }
-    ?>
-</section>
+<?php
+    if(!is_404()) {
+        echo "<section id=\"breadcrumb\" class=\"container\">";
+            if (function_exists('bread_crumb')) {
+                bread_crumb("elm_class=breadcrumb");
+            }
+        echo "</section >";
+    }
+?>
