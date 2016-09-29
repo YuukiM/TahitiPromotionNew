@@ -59,14 +59,14 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 40px;
-    width: 40px;
-    line-height: 0px;
-    font-size: 0px;
+    height: 50px;
+    width: 50px;
+    line-height: 0;
+    font-size: 0;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 40%;
+    top: 38%;
     /*margin-top: -20px;*/
     padding: 0;
     border: none;
@@ -87,7 +87,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev:before, .slick-next:before {
     font-family: $slick-font-family;
-    font-size: 40px;
+    font-size: 50px;
     //color: $accent2;
     line-height: 1;
     color: $slick-arrow-color;
@@ -182,6 +182,7 @@ $slick-opacity-not-active: 0.25 !default;
                 opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+                text-shadow: 0 0 3px rgba(0,0,0,1);
             }
         }
         &.slick-active button:before {
