@@ -263,6 +263,7 @@ button {
   }
 }
 #visual {
+  background-color: $baseBackGround1;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -297,6 +298,15 @@ button {
       }
     }
   }
+  /*&::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    position: absolute;
+  }*/
 }
 #info {
   background-color: $baseBackGround2;
@@ -690,6 +700,13 @@ button {
     }
     .slick-list {
       overflow: visible;
+    }
+    .slick-slide{
+      opacity: 0.4;
+    }
+    .slick-current{
+      opacity: 1 !important;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     .text-container {
       transition: all 0.2s linear;
