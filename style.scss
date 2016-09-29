@@ -644,13 +644,6 @@ button {
         top: 30%;
       }
     }
-    .slick-slide{
-      opacity: 0.4;
-    }
-    .slick-current{
-      opacity: 1 !important;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
   }
   #info {
     .info-block {
@@ -707,6 +700,13 @@ button {
     }
     .slick-list {
       overflow: visible;
+    }
+    .slick-slide{
+      opacity: 0.4;
+    }
+    .slick-current{
+      opacity: 1 !important;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     .text-container {
       transition: all 0.2s linear;

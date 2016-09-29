@@ -6474,11 +6474,6 @@ button {
     max-height: 350px; }
     #visual .text-container .text {
       top: 30%; }
-    #visual .slick-slide {
-      opacity: 0.4; }
-    #visual .slick-current {
-      opacity: 1 !important;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
   #info .info-block {
     overflow: hidden; }
@@ -6518,6 +6513,11 @@ button {
       display: inline-block !important; }
     #visual .slick-list {
       overflow: visible; }
+    #visual .slick-slide {
+      opacity: 0.4; }
+    #visual .slick-current {
+      opacity: 1 !important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     #visual .text-container {
       transition: all 0.2s linear;
       background: rgba(41, 72, 135, 0.8);
