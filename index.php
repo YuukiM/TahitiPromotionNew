@@ -10,8 +10,23 @@
                         $mainVisualImage = get_field("image", $ID);
                         $mainVisualExtURL = get_field("url", $ID);
                         $mainVisualLink = get_field("link", $ID);
+                        $mainVisualTextPosition = get_field("textPosition", $ID);
                         echo "<div class='slide'>\n";
-                        echo "<div class='text-container'>\n";
+                        if($mainVisualTextPosition == "leftMiddle"){
+                            echo "<div class='text-container left-middle'>\n";
+                        }
+                        elseif($mainVisualTextPosition == "leftBottom"){
+                            echo "<div class='text-container left-bottom'>\n";
+                        }
+                        elseif($mainVisualTextPosition == "rightMiddle"){
+                            echo "<div class='text-container right-middle'>\n";
+                        }
+                        elseif($mainVisualTextPosition == "rightBottom"){
+                            echo "<div class='text-container right-bottom'>\n";
+                        }
+                        else{ //No match
+                            echo "<div class='text-container right-bottom'>\n";
+                        }
                         echo "<div class='text'>\n";
                         echo $mainVisualText . "\n";
                         if($mainVisualExtURL) {
