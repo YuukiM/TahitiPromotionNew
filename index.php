@@ -13,19 +13,25 @@
                         $mainVisualTextPosition = get_field("textPosition", $ID);
                         echo "<div class='slide'>\n";
                         if($mainVisualTextPosition == "leftMiddle"){
-                            echo "<div class='text-container left-middle'>\n";
+                            echo "<div class='text-container text-left text-middle'>\n";
                         }
                         elseif($mainVisualTextPosition == "leftBottom"){
-                            echo "<div class='text-container left-bottom'>\n";
+                            echo "<div class='text-container text-left text-bottom'>\n";
+                        }
+                        elseif($mainVisualTextPosition == "leftTop"){
+                            echo "<div class='text-container text-left text-top'>\n";
                         }
                         elseif($mainVisualTextPosition == "rightMiddle"){
-                            echo "<div class='text-container right-middle'>\n";
+                            echo "<div class='text-container text-right text-middle'>\n";
                         }
                         elseif($mainVisualTextPosition == "rightBottom"){
-                            echo "<div class='text-container right-bottom'>\n";
+                            echo "<div class='text-container text-right text-bottom'>\n";
+                        }
+                        elseif($mainVisualTextPosition == "RightTop"){
+                            echo "<div class='text-container text-right text-top'>\n";
                         }
                         else{ //No match
-                            echo "<div class='text-container right-bottom'>\n";
+                            echo "<div class='text-container text-right text-bottom'>\n";
                         }
                         echo "<div class='text'>\n";
                         echo $mainVisualText . "\n";
