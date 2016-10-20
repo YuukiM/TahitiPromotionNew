@@ -27,7 +27,7 @@
                         elseif($mainVisualTextPosition == "rightBottom"){
                             echo "<div class='text-container text-right text-bottom'>\n";
                         }
-                        elseif($mainVisualTextPosition == "RightTop"){
+                        elseif($mainVisualTextPosition == "rightTop"){
                             echo "<div class='text-container text-right text-top'>\n";
                         }
                         else{ //No match
