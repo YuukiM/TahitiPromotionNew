@@ -68,7 +68,7 @@
                 );
                 $info = new WP_Query($infoArgs);
                 if ($info->have_posts()) {
-                    //$i = 0;
+                    $i = 0;
                     while ($info->have_posts()) {
                         $info->the_post();
                         echo "<div class=\"info-block col-xs-12 col-md-4\">";
@@ -91,10 +91,17 @@
                         //echo "</div>";
                         echo "</div></a>";
                         echo "</div>";
-                        /*$i++;
+                        $i++;
+                        /*
                         if (($i % 3) == 0) {
                             echo "<div class='clearfix visible-md-block visible-lg-block'></div>";
                         }*/
+                    }
+                    if ($i == 4) {
+                        echo "<div class=\"info-block info-blank-l hidden-xs hidden-sm col-md-8\"></div>";
+                    }
+                    if ($i == 5) {
+                        echo "<div class=\"info-block info-blank-s hidden-xs hidden-sm col-md-4\"></div>";
                     }
                 } else {
                     echo "<div class=\"info-text\">";

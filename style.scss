@@ -649,6 +649,12 @@ button {
     .info-block {
       overflow: hidden;
     }
+    .info-blank-l{
+      background: url("img/tahiti-logo-l.png") center center no-repeat;
+    }
+    .info-blank-s{
+      background: url("img/tahiti-logo-s.png") center center no-repeat;
+    }
   }
   #not-found{
     height: 1080px;
