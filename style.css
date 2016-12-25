@@ -6518,8 +6518,10 @@ button {
     #visual .slick-list {
       overflow: visible; }
     #visual .slick-slide {
-      opacity: 0.4; }
+      opacity: 0.4;
+      filter: blur(3px); }
     #visual .slick-current {
+      filter: none;
       opacity: 1 !important;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     #visual .text-container {
